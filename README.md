@@ -1,6 +1,8 @@
 # Automatización 
 ## Python-Selenium
 
+![captura de pantalla](screenshot.png)
+
 Este proyecto de automatización esta siendo desarrollado para un cliente de manera freelance, abre una web especifica, hace login, carga los datos segun el tramite indicado y busca un turno libre. Puede hacerse con 4 usuarios a la vez utilizando multi-threading.
 
 Se realizo utilizando: Python, Selenium WebDriver y Tkinter.
