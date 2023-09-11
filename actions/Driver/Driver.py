@@ -4,6 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+
+from core.config import url
 from actions.Driver.actuators.Login import *
 from actions.Driver.actuators.Procedure_selector import *
 from actions.Driver.actuators.Passport_form_filler import *
@@ -27,12 +29,12 @@ class Driver:
 
     def start_driver(self, procedure, user_info):
         # Login process
-        self.driver.get("https://prenotami.esteri.it/")
+        self.driver.get(url)
         self.driver.implicitly_wait(15)
         self.driver.maximize_window()
 
         # while True :
-        #     self.driver.get("https://prenotami.esteri.it/")
+        #     self.driver.get("")
         #     self.driver.implicitly_wait(15)
         #     self.driver.maximize_window()
         #     self.driver.implicitly_wait(15)
@@ -46,11 +48,11 @@ class Driver:
         #     except :
         #         self.set_state_app("Se inicio sesion correctamente")
         #         break
-        # self.driver.get("https://prenotami.esteri.it/Language/ChangeLanguage?lang=13")
+        # self.driver.get("")
 
         # # Process of navigating to prenote
         # while True :
-        #     self.driver.get("https://prenotami.esteri.it/Services")
+        #     self.driver.get("")
         #     try :
         #         WebDriverWait(self.driver, 3).until(
         #             EC.presence_of_element_located((By.XPATH, '//body[contains(text(), "The service is unavailable.")]')))
