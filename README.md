@@ -3,7 +3,7 @@
 
 ![captura de pantalla de GUI](screenshot.png)
 
-Este proyecto de automatización esta siendo desarrollado para un cliente de manera freelance, abre una web especifica, hace login, carga los datos segun el tramite indicado y busca un turno libre. Puede hacerse con 4 usuarios a la vez utilizando multi-threading.
+Este proyecto de automatización fue desarrollado para un cliente de manera freelance, abre una web especifica, hace login, carga los datos segun el tramite indicado y busca un turno libre. Puede hacerse con 4 usuarios a la vez utilizando multi-threading.
 
 Se realizo utilizando: Python, Selenium WebDriver y Tkinter.
 
@@ -24,8 +24,13 @@ Sigue los siguientes pasos para clonar y ejecutar este proyecto en tu entorno lo
 
    ```bash data-copyable
     git clone https://github.com/leandrocarriego/automatizacion_turnos.git
+
+2. **Prepara tu entorno virtual** 
+  
+   ```python data-copyable
+    python -m venv venv
    
-2. **Instalar dependencias:**
+3. **Instalar dependencias:**
     
     ```bash data-copyable
    pip install -r requirements.txt
